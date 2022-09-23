@@ -1,13 +1,247 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    /* background: #e2bd9efe; */
+}
+ 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20%;
+    left: 8.5%;
+    position: absolute;
+    cursor: pointer;
+}
+ 
+.background {
+    background: rgb(255, 255, 255);
+    background-blend-mode: darken;
+    background-size: cover;
+}
+ 
+.footer {
+background-color: #000;
+}
+
+.bg {
+    border: 1px solid;
+    border-radius: 30px;
+    margin: 5px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.ork {
+    display:flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    flex-basis: 1024px;
+}
+ 
+.nav-list {
+    width: 83%;
+    height: 25%;
+    font-size:100%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    top: 30%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    
+}
+ 
+.logo {
+    display: flex; 
+    justify-content: center;
+    align-items: left;
+    position: absolute;
+    left: -14.5%; 
+    top: 0%;
+    float:left;
+    text-align:left;
+}
+ 
+.logo img {
+    width: 30%;
+    border-radius: 0%;
+}
+ 
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
+}
+ 
+.nav-list li a {
+    text-decoration: none;
+    color: #000;
+}
+ 
+.nav-list li a:hover {
+    color: grey;
+}
+ 
+.rightnav {
+    width: 30%;
+    text-align: right;
+}
+ 
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 9px;
+}
+ 
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    max-width: 80%;
+    margin: auto;
+    height: 80%;
+}
+
+.box-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    max-width: 20%;
+    margin: auto;
+    height: 10%;
+    position: fixed;
+    top: 32.5%;
+    left: 79%;
+    position: absolute;
+    
+}
+ 
+.firsthalf {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100%;
+}
+ 
+.secondhalf {
+    width: 30%;
+}
+ 
+.secondhalf img {
+    width: 70%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+ 
+.text-big {
+    font-weight: semi-bold;
+font-family: 'Montserrat', sans-serif;
+
+    font-size: 42px;
+    color: #f60404;
+    
+    padding: 5px;
+}
+ 
+.text-small {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 18px;
+    border-left: 6px solid grey;
+    color: rgb(7, 34, 39);
+    margin-left: 6px;
+    white-space: pre-wrap
+}
+ 
+.btn {
+margin-left: 20px;
+height: 33px;
+width: 70px;
+    color: #fff;
+background-color: #000;
+    cursor: pointer;
+}
+ 
+.btn-sm {
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+ 
+.section {
+    height: 200px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding: 2 rem;
+    top: 80%;
+    left: 2%;
+    position: absolute;
+    justify-content: space-between;
+}
+
+.timeline {
+    height: 250px;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    padding: 2 rem;
+    top: 27.5%;
+    left: 75%;
+    position: absolute;
+    justify-content: space-between;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20%;
+    padding-top: 0 10px;
+    line-height: 1;
+}
+
+.hdl{
+    font-family: 'Montserrat', sans-serif;
+    color: #f60404;
+    top: 10%;
+}
+
+.fk {
+    list-style: none;
+    margin-bottom: 50px;
+}
+ 
+.section-Left {
+    flex-direction: row-reverse;
+}
+ 
+.center {
+    text-align: center;
+}
+ 
+.text-footer {
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.bd {
+    margin-bottom: 25px ;
+    font-size: 50px;
+    list-style: none;
+}
+
+.cl {
+    margin-bottom: 5px ;
+    font-size: 15px;
+    list-style: none;   
+    
 }

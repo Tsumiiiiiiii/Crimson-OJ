@@ -1,7 +1,6 @@
-import { Box } from '@mui/material';
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home, Mediacard, SignIn, SignUp } from "./Components";
+import { Home, LogInfo, SignIn, SignUp } from "./Components";
 
 function App() {
     return (
@@ -10,7 +9,14 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/SignIn" element={<SignIn />} />
           <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/LogInfo" element={<LogInfo />} />
         </Routes>
+
+        <form action="../../post" method="post" 
+              className="form">
+          <button type="submit">Connected?</button>
+        </form>
+
        </BrowserRouter>
         
     );
